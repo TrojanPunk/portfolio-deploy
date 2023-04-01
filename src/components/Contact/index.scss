@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.text-zone {
+  flex-basis: 70%;
+  padding-right: 20px;
+}
+
+.text-sphere {
+  flex-basis: 30%;
+  margin-left: auto;
+}
+
+
+.contact-form {
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Coolvetica';
+
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+        animation: fadeInUp 2s 2s;
+        animation-fill-mode: forwards;
+      }
+  
+      li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+  
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      border: 0;
+      border-radius: 2%;
+      background: #EAF0F7;
+      height: 50px;
+      font-size: 16px;
+      font-family: 'Coolvetica';
+      color: #292929;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      width: 100%;
+      border: 0;
+      background: #EAF0F7;
+      height: 50px;
+      font-family: 'Coolvetica';
+      font-size: 16px;
+      color: #292929;
+      border-radius: 2%;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 150px;
+    }
+  
+    .flat-button {
+      color: #ffd700;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #ffd700;
+      float: left;
+      border-radius: 4px;
+      background: 0 0;
+      text-transform: uppercase;
+      float: right;
+      text-align: center;
+      font-family: sans-serif;
+      margin-right: 10px;
+      width: 96%;
+
+      &:hover {
+        background: #ffd700;
+        color: #333;
+      }
+    }
+  }
+
+  .info-map {
+    position: absolute;
+    background: #000;
+    top: 50px;
+    right: 30%;
+    z-index: 999999;
+    width: 267px;
+    padding: 20px;
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+  
+    span {
+      font-size: 16px;
+  
+      span {
+        color: #ffd700;
+      }
+    }
+  }
+
+  .tagcloud {
+    display: inline-block;
+    top: 0;
+    font-family: 'Electrolize';
+    font-weight: bold;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+    text-align: right;
+    margin-left: 10%;
+    animation: fadeIn 3s 1s backwards;
+  }
+  .tagcloud--item {
+    color: #3FC1C9;
+    text-transform: uppercase;
+    transition: font-size 0.3s ease-in-out;
+    &:hover {
+      color: #E43F5A;
+      font-size: 1.3002em;
+    }
+  }
